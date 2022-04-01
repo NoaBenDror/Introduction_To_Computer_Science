@@ -1,0 +1,21 @@
+noabendror
+316163260
+noa ben dror
+====================
+=  README for ex2  =
+====================
+==================
+=  Description:  =
+==================
+this exercise includes different mathematical functions, that use:
+calling other functions; getting parameters and returning different types;
+user's input; nested if, and more.
+======================
+=  Special Comments  =
+======================
+the chosen edge cases on test_largest_and_smallest function:
+1,3,3 - two of the three are equal and maximal numbers
+6,-6,6 - two of the three are equal and minimal numbers
+0,0,0 - three equal numbers
+19.7, 17,17.9 - using both int and float types numbers
+17,17.9,19.7 - same as the previous numbers, in a different order

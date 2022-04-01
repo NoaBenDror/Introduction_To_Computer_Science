@@ -1,0 +1,46 @@
+noabendror
+316163260
+noa ben dror
+====================
+=  README for ex4 =
+====================
+==================
+=  Description:  =
+==================
+this exercise implements the hangman game
+======================
+=  Special Comments  =
+======================
+
+Additional functions:
+is_in_wrong_guess_lst-a function that gets a word and a list of wrong guesses,
+ and checks whether this word contains a letter from the list of wrong guesses
+
+is_letters_match- a function that gets a word and a pattern, and checks
+ if the letters in the pattern match the letters in the word.
+ assuming they have the same length
+
+check_common_letter_not_in_pattern - a function that gets a list of
+ counters(related to letters), and a pattern, returns the letter with
+ the maximal counter, excluding pattern letters
+
+(provided)-
+letter_to_index - return the index of the given letter in an alphabet list
+index_to_letter - return the letter corresponding to the given index
+
+section C - q1:
+("chocolate", "ch_c_late", "o")-two equal letters in word+ completing the word
+("bottle", "bo__le", "t")-two equal letters repeat one after the other in word
+("extraordinary", "_____________", "x")-not even one letter in word revealed
+("computer", "co_put__", "k")- the letter doesn't appear in word.
+pattern should not change
+
+section C-q2:
+If we want to play the game with hebrew letters and hebrew words,
+we need to change A_B_C variable to contain the hebrew alphabet, to change
+LETTERS_IN_ALPHABET to number of letters in hebrew alphabet (22),
+to change words.txt to contain hebrew words, to define "CHAR_A = 97" to match
+hebrew letter index, to take into consideration the final form letters
+in hebrew - deciding whether they are completely different letters from their
+"normal" form or not, and if the player guesses a letter that has a final form,
+it will be also considered as guessing the final form

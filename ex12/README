@@ -1,0 +1,45 @@
+noabendror
+316163260
+noa ben dror
+menachem_oren
+204231369
+menachem oren
+====================
+=  README for ex12 =
+====================
+==================
+=  Description:  =
+==================
+In this exercise we implemented the "4 in a row" game. there are a few ways
+to play the game - human vs. human; human vs. computer; computer vs. computer.
+We used Graphical User Interface to present the game to the user(s)
+and support user interaction.
+======================
+=  Special Comments  =
+======================
+1. Note: *  we allow to switch player type while playing (on the same round).
+         *  we also allow to start a new game even without finishing the last
+            one
+
+2. Exceptions: "Illegal move." and "Illegal location." exceptions are raised
+               by Game. "No possible AI moves." is raised by AI.
+               but, the GUI disables any illegal move request, so it does not
+               catch exceptions. Similarly, AI makes sure its chosen move is
+               legal.
+
+3. Classes:
+         * Game - It (and only it) is responsible for the rules and the logic
+           of the game, checks legality, maintains who is the the current
+           player, declares winning, etc. The status changes by make_move()
+           from outside, and is returned by several "get" methods.
+           For efficiency, Game checks winning in a way that "knows" the last
+           move (no need to check all the board).
+
+         * AI - a non-human player. It gets a Game object, and decides by its
+           current status, about its next move. The logic is: random column
+           from legal columns (not an intelligent implementation)
+
+         * Gui - Graphical User Interface that presents the game to the
+           user(s), and enables interaction. it creates, reflects, and
+           interacts with a Game object. it has minimal logic, the Game object
+           is the one responsible for the logic, legality etc.

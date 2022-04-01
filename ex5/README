@@ -1,0 +1,58 @@
+noabendror
+316163260
+noa ben dror
+====================
+=  README for ex5 =
+====================
+==================
+=  Description:  =
+==================
+this exercise implements search word game - finding words inside matrix
+of letters in specified directions
+======================
+=  Special Comments  =
+======================
+
+Additional functions:
+does_word_match_index - a function that gets a word, matrix of letters,
+                        row index, column index and a search direction,
+                        and checks whether the word matches that index in
+                        the matrix
+
+does_len_match_index - a function that checks if match is possible considering
+                       the word's length only. if it's outside the matrix -
+                       the word would surely not match
+
+build_letter_to_indices - a function that gets matrix of letters and returns a
+                          dictionary: key = letter, value = list of row,column
+                          in which the letter appears
+
+update_dict_with_word - a function that gets a word and a current dictionary
+                        of word to occurrences, and adds the word to the
+                        dictionary if it does not exist, or adds 1 to the
+                        occurrences if it exists
+
+filter_directions - a function that gets string of letters that represent
+                    the search directions, checks if some letters appear more
+                    than once,and returns filtered string, so that each letter
+                    will appear only once
+
+process_word_search_in_matrix - a function that gets list of strings, each
+                      string represents a parameter - names of files which
+                      contain list of words, matrix of letters, search
+                      directions, and an output file.(if the parameters are
+                      valid) the function will write the results into the
+                      output file
+
+
+The tested function in 'check_wordsearch.py' is 'does_len_match_index'
+(actually also checks DIRECTION_TO_MOVEMENT)-
+(1, 1, 1, 0, 0, "u") - letter length is 1, matrix 1X1 - should return True
+(5, 1, 1, 0, 0, "u") - same as one above, letter length is 5 - should return
+ False
+(7, 6, 9, 1, 2, "r") - fits exactly until edge of matrix - should return True
+(3, 5, 5, 2, 2, direction) - square matrix, checking match from middle index
+- should return True in all directions
+(4, 5, 5, 2, 2, direction) - square matrix, checking match from middle index
+- should return False in all directions
+

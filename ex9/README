@@ -1,0 +1,23 @@
+noabendror
+316163260
+noa ben dror
+====================
+=  README for ex9 =
+====================
+==================
+=  Description:  =
+==================
+this exercise implements rush-hour game, using oop (classes: board, game, car)
+======================
+=  Special Comments  =
+======================
+Additional functions:
+
+__pars_check_input - this function checks whether the user entered a legal
+                     syntax according to <car_name,movement>, and according
+                     to cars in board. if not, return None. if syntax is
+                     legal, return a list of length 2:
+                     [string of car color,string of movement]
+
+__is_move_legal - this method checks whether the move is legal, considering
+                  the car's possible moves, board's limits, and blocking cars

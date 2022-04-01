@@ -1,0 +1,57 @@
+noabendror
+316163260
+noa ben dror
+====================
+=  README for ex7 =
+====================
+==================
+=  Description:  =
+==================
+this exercise uses recursion for different functions
+======================
+=  Special Comments  =
+======================
+
+Additional functions:
+
+has_divisor_smaller_than - a function that gets two int numbers, and checks if
+                           the first number has a divisor smaller than the
+                           second number
+
+factorial - a function that gets a number and returns it's factorial
+
+power - a function that gets x- base, and n- exponent, and returns the
+        exponentiation
+
+build_sequences - a function that gets list of chars, and n-int number,
+                  and returns an n length list of possible sequences
+
+build_no_repetition_sequences - a function that gets list of chars,
+                                and n-int number, and returns an n length list
+                                of possible sequences without chars repetition
+                                on the same sequence(assuming no repeated
+                                chars on char_list)
+
+build_parentheses_list - a function that gets number of right parentheses,
+                         number of left parentheses, a string of parentheses,
+                         number of pairs of parentheses, and a list of
+                         parentheses permutations, and returns a list of all
+                         possible sequences
+
+up_and_right_helper - this function gets n,k (from up_and_right function)
+                      and a string that represents movement path, and prints
+                      all paths to (n,k)
+
+
+Part C : Runtime analysis -
+is_prime- O(n) - in the worst case, n is prime, which means we will run the
+recursive function(has_divisor_smaller_than) (n/2)+1 times - O(n)
+
+print_no_repetition_sequences - O((n^k)*(m^k)) - for each iteration of the
+loop we run the recursive function (build_no_repetition_sequences) n^k times
+and also check for each char if it's in the "recursive list" m^k-
+O((n^k)*(m^k))
+
+flood_fill - O(n*m) - in the worst case, each index in matrix has "." in it-
+that means moving through each position in matrix length n*m (not including
+frame of matrix) - O(n*m)

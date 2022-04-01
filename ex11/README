@@ -1,0 +1,22 @@
+noabendror
+316163260
+noa ben dror
+====================
+=  README for ex11 =
+====================
+==================
+=  Description:  =
+==================
+in this exercise we practice use of decision binary trees.
+in this particular case - diagnosing illnesses by their symptoms.
+======================
+=  Special Comments  =
+======================
+
+* in this exercise we assume we are dealing with binary trees, when each Node
+  has 0 or 2 children.
+
+* in build_tree function i chose to first build a tree of only symptoms, and
+  then check which illness matches each path
+
+* i added getters to Record and Node classes,and also set_data() to Node class

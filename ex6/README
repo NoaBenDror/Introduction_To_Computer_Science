@@ -1,0 +1,23 @@
+noabendror, menachem_oren
+noa ben dror, menachem oren
+====================
+=  README for ex5 =
+====================
+==================
+=  Description:  =
+==================
+this exercise works with audio wav files. The user has a few options
+to choose from - changing file, uniting files, and composing a melody.
+======================
+=  Special Comments  =
+======================
+Each menu has a function of its own. The main menu leads to other menus
+(according to user's choice), and each inner menu leads eventually to
+transition menu - in which the user has the option to change file or save it.
+
+If the user chose to change file - each change has it's own function.
+If the user chose to unite 2 files - there is a main function for the union,
+which calls helper functions. These helper functions unite the 2 audio data
+lists, and match the sample rate to united file sample rate.
+If the user chose to compose a melody - there is a main function for the
+composition. This function has a helper function which composes each note.

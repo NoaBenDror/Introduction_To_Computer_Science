@@ -1,0 +1,44 @@
+noabendror
+316163260
+noa ben dror
+====================
+=  README for ex3  =
+====================
+==================
+=  Description:  =
+==================
+this exercise includes some functions that use loops, lists, input from user.
+======================
+=  Special Comments  =
+======================
+Additional functions:
+
+is_cyclic_from_index (to cyclic function) - a function that gets two lists,
+and shift, and checks whether the second list is cyclic shift of
+the first list, with this specific shift.
+assumptions: the lists have equal length, shift_lst2<length
+
+does_it_have_seven (to seven_boom function) - a function that
+gets an int type number and checks if it has the digit 7 in it
+
+
+the chosen edge cases on test_maximum_func function:
+
+empty list - should return None (and not 0)
+list [0] - a list with one element
+list [5, 5, 5] - a list with elements that have the same value
+list [7, 3, -15, 34, -25, 93] - a longer list, the last element is the maximal
+
+
+Part 5 - Theoretical questions:
+
+1. TypeError: object of type 'int' has no len() -
+   the inputs are not of type list
+2. -1
+3. TypeError: '<' not supported between instances of 'int' and 'str' -
+   it means the function can't compare string type and int type values-
+   for example, can't check which is maximal between 100 and 'intro'
+4. [0, 1, 1]
+5. []
+6. [[0,2], [0,2], [1,1]] - the same pair repeats because the assumption
+   that each number appears not more than once did not exist

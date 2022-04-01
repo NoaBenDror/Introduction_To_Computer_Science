@@ -1,0 +1,56 @@
+noabendror
+316163260
+noa ben dror
+====================
+=  README for ex8 =
+====================
+==================
+=  Description:  =
+==================
+part 1 of this exercise implements the sudoko game. part 2 of this exercise
+includes different variations of creating subsets of {0,...,n-1} of size k.
+======================
+=  Special Comments  =
+======================
+
+Additional functions:
+
+illegal_in_row - a function that checks if a given number is in row
+
+illegal_in_col - a function that checks if given number is in column
+
+illegal_in_square - a function that checks if given number is in its square
+
+illegal_placement - a function that gets board, row, column, and number, and
+                    returns whether it is illegal to place this number in
+                    board[row][col]
+
+find_next_empty - a function that finds next empty cell in board (traversing
+                  down and then to the right). if there is no empty cell, it
+                  will return the first cell outside the board, meaning
+                  board[0][len(board)]. this will be taken care by the calling
+                  function.
+
+solve_sudoku_helper - this function gets sudoku board, row index, col index,
+                      and solves the sudoku starting from board[row][col]
+
+
+print_k_subsets_helper - this function gets current set, wanted size of
+                         subsets, index, and a counter that checks how many
+                         indices we've chosen. the function creates all sets
+                         including the given index, and all sets excluding the
+                         given index, and prints all of them
+
+print_set - this function gets a current set, and prints it as a list
+
+fill_k_subsets_helper - this function gets current set, wanted size of
+                        subsets, index, a counter that checks how many indices
+                        we've chosen, and a list. the function creates all
+                        sets including the given index, and all sets excluding
+                        the given index, and adds all sets to lst
+
+fill_lst - this function gets current set, and returns the set as a list
+
+return_k_subsets_helper - a function that gets an int number n, and an int
+                          number k<=n, and an index, and returns a list of
+                          all subsets of {index,...,n-1} of size k
